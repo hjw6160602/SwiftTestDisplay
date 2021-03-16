@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		67C8F5AA26009E6F009CEB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C8F5A826009E6F009CEB1C /* Main.storyboard */; };
 		67C8F5AC26009E6F009CEB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C8F5AB26009E6F009CEB1C /* Assets.xcassets */; };
 		67C8F5AF26009E6F009CEB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C8F5AD26009E6F009CEB1C /* LaunchScreen.storyboard */; };
+		67C8F5B82600A136009CEB1C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8F5B72600A136009CEB1C /* UIColor+Extension.swift */; };
+		67C8F5D32600A5A3009CEB1C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8F5D22600A5A3009CEB1C /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DA372752F245F91E5681BB9 /* Pods-测试界面Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-测试界面Swift.debug.xcconfig"; path = "Target Support Files/Pods-测试界面Swift/Pods-测试界面Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		67C8F59F26009E6F009CEB1C /* 测试界面Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "测试界面Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C8F5A226009E6F009CEB1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67C8F5A426009E6F009CEB1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,10 @@
 		67C8F5AB26009E6F009CEB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C8F5AE26009E6F009CEB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67C8F5B026009E6F009CEB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C8F5B72600A136009CEB1C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		67C8F5D22600A5A3009CEB1C /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F01F01A69E66C41703CB5BF6 /* Pods-测试界面Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-测试界面Swift.release.xcconfig"; path = "Target Support Files/Pods-测试界面Swift/Pods-测试界面Swift.release.xcconfig"; sourceTree = "<group>"; };
+		F6C22C9CE77251259F3F7740 /* Pods_____Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02F9B70BF07DD18CD2540F09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DA372752F245F91E5681BB9 /* Pods-测试界面Swift.debug.xcconfig */,
+				F01F01A69E66C41703CB5BF6 /* Pods-测试界面Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		67C8F59626009E6F009CEB1C = {
 			isa = PBXGroup;
 			children = (
 				67C8F5A126009E6F009CEB1C /* 测试界面Swift */,
 				67C8F5A026009E6F009CEB1C /* Products */,
+				02F9B70BF07DD18CD2540F09 /* Pods */,
+				A895B48190ED2A1FFDD3ABA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +76,23 @@
 			children = (
 				67C8F5A226009E6F009CEB1C /* AppDelegate.swift */,
 				67C8F5A426009E6F009CEB1C /* SceneDelegate.swift */,
+				67C8F5D22600A5A3009CEB1C /* Const.swift */,
 				67C8F5A626009E6F009CEB1C /* ViewController.swift */,
+				67C8F5B72600A136009CEB1C /* UIColor+Extension.swift */,
 				67C8F5A826009E6F009CEB1C /* Main.storyboard */,
 				67C8F5AB26009E6F009CEB1C /* Assets.xcassets */,
 				67C8F5AD26009E6F009CEB1C /* LaunchScreen.storyboard */,
 				67C8F5B026009E6F009CEB1C /* Info.plist */,
 			);
 			path = "测试界面Swift";
+			sourceTree = "<group>";
+		};
+		A895B48190ED2A1FFDD3ABA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C22C9CE77251259F3F7740 /* Pods_____Swift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67C8F5B326009E6F009CEB1C /* Build configuration list for PBXNativeTarget "测试界面Swift" */;
 			buildPhases = (
+				35F79B2DF070850CF514F808 /* [CP] Check Pods Manifest.lock */,
 				67C8F59B26009E6F009CEB1C /* Sources */,
 				67C8F59C26009E6F009CEB1C /* Frameworks */,
 				67C8F59D26009E6F009CEB1C /* Resources */,
+				EAC6CC3254BB93A99C91198D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35F79B2DF070850CF514F808 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-测试界面Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC6CC3254BB93A99C91198D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-测试界面Swift/Pods-测试界面Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-测试界面Swift/Pods-测试界面Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-测试界面Swift/Pods-测试界面Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67C8F59B26009E6F009CEB1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +212,8 @@
 				67C8F5A726009E6F009CEB1C /* ViewController.swift in Sources */,
 				67C8F5A326009E6F009CEB1C /* AppDelegate.swift in Sources */,
 				67C8F5A526009E6F009CEB1C /* SceneDelegate.swift in Sources */,
+				67C8F5B82600A136009CEB1C /* UIColor+Extension.swift in Sources */,
+				67C8F5D32600A5A3009CEB1C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +357,14 @@
 		};
 		67C8F5B426009E6F009CEB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DA372752F245F91E5681BB9 /* Pods-测试界面Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4LU8YR75W;
 				INFOPLIST_FILE = "测试界面Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +372,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SaiDicaprio.----Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		67C8F5B526009E6F009CEB1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01F01A69E66C41703CB5BF6 /* Pods-测试界面Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4LU8YR75W;
 				INFOPLIST_FILE = "测试界面Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SaiDicaprio.----Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
